@@ -1,0 +1,22 @@
+{
+   "background": {
+      "scripts": ["backgroundmin.js"]
+   },
+   "browser_action": {
+      "default_popup": "popup.html",
+      "default_title": "whatsapp-automation"
+   },
+   "content_scripts": [{
+      "js": ["contentmin.js"],
+      "matches": ["\u003Call_urls>"]
+   }],
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon16.png",
+      "48": "img/icon48.png"
+   },
+   "manifest_version": 2,
+   "name": "WASender Bulk Messaging",
+   "permissions": ["tabs", "notifications", "storage", "cookies", "http://*/*", "https://*/*"],
+   "version": "1.6.15"
+}
